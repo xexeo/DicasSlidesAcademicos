@@ -1,6 +1,6 @@
 \section{O estilo dos slides}
 
-Os slides devem apresentar uma identidade conjunta. Para isso devem ser usados estilos apropriados, que estão disponíveis nas ferramentas de criação, ou se criar um estilo novo.
+Os slides devem apresentar uma identidade conjunta. Para isso devem ser usados estilos apropriados, que estão disponíveis nas ferramentas de criação, ou se criar um estilo novo. A Figura \ref{fig:tres} mostra três slides diferentes em estilo e que mantêm uma identidade conjunta por meio de cores, fontes e rodapés.
 
 Esse estilo deve possuir vários tipos de slides. A aula deve usar mais de um desses tipos, tanto para cumprir papéis posicionais, como o título, quanto para não ficar monótona. Os tipos principais são:
 \begin{itemize}
@@ -32,23 +32,19 @@ Também é importante ter a identificação do autor. Normalmente ela inclui um 
 
 Além disso, é interessante que, para a maioria dos usos, o estilo do slide esteja diretamente associado a uma instituição. Isso pode ser feito por meio da colocação do logo da instituição em uma posição clara.
 
-No Power Point existem, por \textit{default}, três espaços no pé do slide (\textit{footer}). Um é reservado para o número. Os outros dois são possívelmente livres, sendo que um é sempre devemos usar identificar o autor. O terceiro espaço pode ser usado para o título da apresentação, o título do curso, o título do evento ou outra informação similar que se quer ressaltar.
+No Power Point existem, por \textit{default}, três espaços no rodapé do slide (\textit{footer}). Um é reservado para o número. Os outros dois são possivelmente livres, sendo que um  sempre devemos usar identificar o autor. O terceiro espaço pode ser usado para o título da apresentação, o título do curso, o título do evento ou outra informação similar que se quer ressaltar.
 
 A Figura \ref{fig:coppe} mostra um slide com todos esses elementos: o logo do PESC, o nome e e-mail do autor, o nome do curso, o número do slide em uma fonte grande e o número total de slides em uma fonte menor.
 
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=\tam\linewidth]{imagens/slideexemplotepj.png}
-    \caption{Um slide com logo, identificação do autor (incluindo e-mail) ,nome do curso,   número do slide e número total de slides}
-    \label{fig:coppe}
-\end{figure}
-
-Use fontes ``limpas'', não rebuscadas, e \textbf{sem-serifa}\footnote{Serifas são as pontinhas que existem em algumas fontes. Elas estão bem visíveis no S da palavra ``slides'' desta seção.}, como Arial ou Calibri, e \textbf{corpos grandes}, 32 pts, por exemplo. Os slides das Figuras \ref{fig:coppe} e \ref{fig:teximag} seguem essa regra. Já o slide da figura \ref{fig:formulas} usa um tamanho menor para o corpo das fórmulas. Lembre que a banca, ao invés dos alunos, é mais velha e pode ter dificuldades de visão.
-
-Forneça todas as referências, e \textbf{indique a propriedade intelectual de tudo}. Prefira imagens de domínio público ou com licenças amplas, como \textit{Creative Commons}.
 
 
-\subsubsection{Usando os logos corretos}
+Devemos usar fontes ``limpas'', não rebuscadas, e \textbf{sem-serifa}\footnote{Serifas são as pontinhas que existem em algumas fontes. Elas estão bem visíveis no S da palavra ``slides'' desta seção.}, como Arial ou Calibri, e \textbf{corpos grandes}, 32 pts, por exemplo. Os slides das Figuras \ref{fig:coppe} e \ref{fig:teximag} seguem essa regra. Já o slide da figura \ref{fig:formulas} usa um tamanho menor para o corpo das fórmulas. Lembre que a banca, ao invés dos alunos, é mais velha e pode ter dificuldades de visão.
+
+
+
+
+
+\subsection{Usando os logos corretos}
 
 É importantíssimo usar os logos corretos das instituições. Para isso procure os logos originais e os manuais de marca.
 
@@ -75,12 +71,7 @@ Algumas pessoas, erroneamente, usam um título de seção que se repete nessa po
 
 É possível criar um slide com o nome da seção, mas ele deve ser menor que o nome do slide. Usando o \texttt{beamer}, o formato de slides do \LaTeX, é possível colocar no topo do slide uma mini-agenda, onde o nome da seção tem uma ênfase. A Figura \ref{fig:meio} mostra um slide que tem todas as seções identificadas em seu cabeçalho, sendo que a seção atual está com ênfase.
 
-\begin{figure}[hb]
-    \centering
-    \includegraphics[width=\tam\linewidth]{imagens/agendadomeio.png}
-    \caption{Um slide mostrando a parte que será falada da agenda, com as outras partes acinzentadas. Criada usando o \LaTeX\  e o \texttt{beamer}.}
-    \label{fig:meio}
-\end{figure}
+
 
 
 
@@ -120,6 +111,30 @@ Slides ``divertidos'', como os que estão resumidos\footnote{Esses slides foram 
         (Fonte: unblast.com) }
     \label{fig:fun}
 \end{figure}
+
+\subsection{Quebrando as regras}
+
+É possível quebrar as regras algumas vezes para tirar a monotonia das aulas ou para deixar um ponto mais claro.
+
+No slide da Figura \ref{fig:magica} fiz uma brincadeira com a turma, para chamar atenção em meio a uma aula expositiva onde não havia atividades. Para auxiliar a quebrar o ritmo escolhi, apenas nesse slide da aula, usar uma fonte totalmente diferente, que inclusive dificulta  a leitura, mas que tenta simular uma fonte mágica.
+
+\begin{figure}[tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{imagens/magica}
+    \caption{Slide feito para ``acordar'' e motivar a turma em uma aula que explica o que é software.}
+    \label{fig:magica}
+\end{figure}
+
+Já o slide da Figura \ref{fig:ponte} usa a técnica da ``figura inspiradora'', que eu não considero correta para toda uma aula, e também não tem título. Mas ele aparece logo depois de um slide comum que acaba com a sentença ``Um projeto é uma ponte do estado atual para um futuro melhor''. Eu uso o slide para explicar melhor o conceito de por que fazemos projeto, mas ele está lá para motivar e mudar um pouco o tom da aula, até aquele momento com slides de definição e instrução. Nesse momento o slide serve de cenário para os comentários, mas o slide anterior garante que a ideia específica está registrada.
+
+\begin{figure}[tbh]
+    \centering
+    \includegraphics[width=0.7\linewidth]{imagens/ponte}
+    \caption{Figura da ponte só aparece porque no slide anterior há a frase ``Um projeto é uma ponte do estado atual para um futuro melhor''}
+    \label{fig:ponte}
+\end{figure}
+
+
 
 \subsection{Slide de contato}
 
