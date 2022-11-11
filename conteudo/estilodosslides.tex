@@ -1,10 +1,15 @@
 \section{O estilo dos slides}
 
-Os slides devem apresentar uma identidade conjunta. Para isso devem ser usados estilos apropriados, que estão disponíveis nas ferramentas de criação, ou se criar um estilo novo. A Figura \ref{fig:tres} mostra três slides diferentes em tipo e que mantêm uma identidade conjunta por meio de cores, fontes e rodapés.
+\textbf{Os slides devem apresentar uma identidade conjunta}.
+ Para isso devem ser usados estilos apropriados, que estão disponíveis nas ferramentas de criação, ou se criar um estilo novo.
+ A Figura \ref{fig:tres} mostra três slides diferentes em tipo e que mantêm uma identidade conjunta por meio de cores, fontes e rodapés.
 
-É muito importante usar o recurso de estilos do software escolhido, porque ele permite mudar rapidamente a imagem geral da apresentação sem ter que alterar slide a slide. No repositório GitHub disponibilizo  arquivos \textit{Power Point} que na verdade são o mesmo conteúdo\footnote{\url{https://github.com/xexeo/DicasSlidesAcademicos/tree/main/Slides}}, aplicando estilos diferentes.
+É muito importante usar o recurso de estilos do software escolhido, porque ele permite mudar rapidamente a imagem geral da apresentação sem ter que alterar slide a slide.
+ No repositório GitHub disponibilizo  arquivos \textit{Power Point} que na verdade são o mesmo conteúdo\footnote{\url{https://github.com/xexeo/DicasSlidesAcademicos/tree/main/Slides}}, aplicando estilos diferentes.
 
-Esse estilo deve possuir vários tipos de slides. A aula deve usar mais de um desses tipos, tanto para cumprir papéis posicionais, como o título e título de seção, quanto para não ficar monótona. Os tipos principais são:
+Esse estilo deve possuir vários tipos de slides.
+ A aula deve usar mais de um desses tipos, tanto para cumprir papéis posicionais, como o título e título de seção, quanto para não ficar monótona.
+ Os tipos principais são:
 \begin{itemize}
     \item título;
     \item o título de seção;
@@ -45,15 +50,21 @@ Os slides \textbf{devem ser numerados} e conter em cada slide o número total de
 
 Também é importante ter a identificação do autor. Normalmente ela inclui um e-mail ou um site.
 
-Além disso, é interessante que, para a maioria dos usos, o estilo do slide esteja diretamente associado a uma instituição. Isso pode ser feito por meio da colocação do logo da instituição em uma posição clara.
+Além disso, é interessante que, para a maioria dos usos, o estilo do slide esteja diretamente associado a uma instituição.
+ Isso pode ser feito por meio da colocação do logo da instituição em uma posição clara.
 
-No Power Point existem, por \textit{default}, três espaços no rodapé do slide (\textit{footer}). Um é reservado para o número. Os outros dois são possivelmente livres, sendo que um  sempre devemos usar identificar o autor. O terceiro espaço pode ser usado para o título da apresentação, o título do curso, o título do evento ou outra informação similar que se quer ressaltar.
+No Power Point existem, por \textit{default}, três espaços no rodapé do slide (\textit{footer}).
+Um é reservado para o número.
+ Os outros dois são possivelmente livres, sendo que um  sempre devemos usar identificar o autor.
+ O terceiro espaço pode ser usado para o título da apresentação, o título do curso, o título do evento ou outra informação similar que se quer ressaltar.
 
 A Figura \ref{fig:coppe} mostra um slide com todos esses elementos: o logo do PESC, o nome e e-mail do autor, o nome do curso, o número do slide em uma fonte grande e o número total de slides em uma fonte menor.
 
 
-
-Devemos usar fontes ``limpas'', não rebuscadas, e \textbf{sem-serifa}\footnote{Serifas são as pontinhas que existem em algumas fontes. Elas estão bem visíveis no S da palavra ``slides'' desta seção.}, como Arial ou Calibri, e \textbf{corpos grandes}, 32 pts, por exemplo. Os slides das Figuras \ref{fig:coppe} e \ref{fig:teximag} seguem essa regra. Já o slide da figura \ref{fig:formulas} usa um tamanho menor para o corpo das fórmulas. Lembre que uma banca, ao invés de alunos, é mais velha e pode ter dificuldades de visão.
+Devemos usar fontes ``limpas'', não rebuscadas, e \textbf{sem-serifa}\footnote{Serifas são as pontinhas que existem em algumas fontes.
+Elas estão bem visíveis no S da palavra ``slides'' desta seção.}, como Arial ou Calibri, e \textbf{corpos grandes}, 32 pts, por exemplo.
+Os slides das Figuras \ref{fig:coppe} e \ref{fig:teximag} seguem essa regra. Já o slide da figura \ref{fig:formulas} usa um tamanho menor para o corpo das fórmulas.
+Lembre que uma banca, ao invés de alunos, é mais velha e pode ter dificuldades de visão.
 
 
 
@@ -77,8 +88,8 @@ No caso da UFRJ, houve um logo especial em 2020, para os 100 anos, e em 2021 o l
 
 \begin{figure}[hbt]
     \centering
-    \includegraphics[height=3cm]{imagens/logoPrincipal.eps}
-    \caption{Logo novo do PESC.}
+    \includegraphics[height=3cm]{imagens/logoPESC_sigla_cor}
+    \caption{Logo do PESC a partir de 2022.}
     \label{fig:logopesc}
 \end{figure}
 
@@ -130,5 +141,24 @@ Por exemplo, para o vermelho usado em vários desses exemplos (\#C00000), a Adob
     \label{fig:coresdovermelhao}
 \end{figure}
 
+\subsection{Problemas de Visualização de Cores}
+
+Muitas pessoas, principalmente do sexo masculino, sofrem de daltonismo ou podem ter outros problemas visuais que dificultem a visualização de cores ou a visualização de cores em detalhes.
+
+Para tratar esse problema podem ser usadas menos cores, ou palhetas de cores preparadas para isso. Alguns sites fornecem informação adequadas para paletas e para pares de cores\footnote{Um desses sites é \url{https://davidmathlogic.com/colorblind/}}.
+
+\begin{figure}[hbt]
+\centering
+\begin{tikzpicture}[every node/.style = {minimum width=2cm,minimum height=4em,draw,node distance=0cm,align=center}]
+\node[fill=ibm1] (c1) at (0,0) {\#648fff};
+\node[fill=ibm2,right = of c1] (c2)  {\#785ef0};
+\node[fill=ibm3,right = of c2] (c3)  {\#dc267f};
+\node[fill=ibm4,right = of c3] (c4)  {\#fe6100};
+\node[fill=ibm5,right = of c4] (c5)  {\#ffb000};
+\node[fill=black,text=white,right = of c5] (c6) {\#000000};
+\node[fill=white,right = of c6] (c7) {\#ffffff};
+\end{tikzpicture}
+\caption{Cores da paleta sugerida pela IBM para daltonismo. Fonte: \citep{ibmcolor} apud \citep{color}}
+\end{figure}
 
 
