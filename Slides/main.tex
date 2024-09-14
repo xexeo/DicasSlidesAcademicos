@@ -1,29 +1,143 @@
 \documentclass[aspectratio=169]{beamer}
+
+ % Altere o tema se preferir
+\usepackage[brazil]{babel} % Suporte para português brasileiro
+
 \usepackage[%
 numbering=fraction,%
 block=fill,%
 subsectionpage=progressbar]{pescPres}
 
-\usepackage[brazilian]{babel}
 
-\title[exemplo de apresentação]{Um exemplo de apresentação do PESC}
-\subtitle{Depende do tema metropolis \\ v.3 atualização dos logos do programa e da UFRJ para 2022 }
 
-\author{Colocar o Nome do Aluno}
+\usepackage{lipsum} % Para gerar texto de exemplo (Lorem Ipsum)
+\usepackage{graphicx} % Para adicionar imagens
+\usepackage{multicol} % Para layouts em várias colunas
+
+\title{Exemplo de Apresentação Beamer}
+\subtitle{Configurações de Slides}
+\author{Seu Nome}
 \advisor{Colocar o Nome do Orientador} % opcional
-
+\date{\today}
 
 \begin{document}
-    \maketitle
 
 
-\section{Primeira Seção}
 
-\begin{frame}{Título do frame}
-	conteúdo
+% Slide 1: Slide de Título
+\begin{frame}
+    \titlepage
 \end{frame}
 
-\subsection{sub-seção}
+\section{Primeira seção}
+
+% Slide 2: Lista com marcadores
+\begin{frame}{Lista com Marcadores}
+    \begin{itemize}
+        \item Primeiro ponto
+        \item Segundo ponto
+        \item Terceiro ponto
+           \end{itemize}
+\end{frame}
+
+% Slide 3: Lista numerada
+\begin{frame}{Lista Numerada}
+    \begin{enumerate}
+        \item Primeiro item
+        \item Segundo item
+        \item Terceiro item
+
+    \end{enumerate}
+\end{frame}
+
+% Slide 4: Duas colunas com marcadores
+\begin{frame}{Duas Colunas com Marcadores}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Coluna 1, Item 1
+                \item Coluna 1, Item 2
+
+            \end{itemize}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Coluna 2, Item 1
+                \item Coluna 2, Item 2
+
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+% Slide 5: Slide com imagem
+\begin{frame}{Slide com Imagem}
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{example-image} % Substitua pela sua própria imagem
+    \end{center}
+\end{frame}
+
+% Slide 6: Texto e imagem lado a lado
+\begin{frame}{Texto e Imagem Lado a Lado}
+    \begin{columns}
+        \column{0.5\textwidth}
+            Esse é um texto sobre a imagem do lado
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{example-image} % Substitua pela sua própria imagem
+    \end{columns}
+\end{frame}
+
+\section{Segunda Seção}
+
+% Slide 7: Slide com tabela
+\begin{frame}{Exemplo de Tabela}
+    \begin{table}[htbp]
+        \centering
+        \begin{tabular}{|c|c|c|}
+        \hline
+        Cabeçalho 1 & Cabeçalho 2 & Cabeçalho 3 \\
+        \hline
+        Célula 1  & Célula 2  & Célula 3  \\
+        Célula 4  & Célula 5  & Célula 6  \\
+        \hline
+        \end{tabular}
+        \caption{Esta é uma tabela de exemplo.}
+    \end{table}
+\end{frame}
+
+% Slide 8: Texto em várias colunas
+\begin{frame}{Texto em Várias Colunas}
+    \begin{multicols}{2}
+        \lipsum[2]
+    \end{multicols}
+\end{frame}
+
+% Slide 9: Bloco de texto
+\begin{frame}{Bloco de Texto}
+    \begin{block}{Informação Importante}
+        Esse é um texto dentro de um bloco de texto que pode ser configurado de várias maneiras.
+    \end{block}
+\end{frame}
+
+% Slide 10: Slide de citação
+\begin{frame}{Slide de Citação}
+    \begin{quote}
+        \LaTeX é uma ferramenta muito boa e muito ruim.
+    \end{quote}
+\end{frame}
+
+% Slide 11: Caixa de destaque
+\begin{frame}{Exemplo de Caixa de Destaque}
+    \begin{alertblock}{Ponto Chave}
+       Um ponto chave sobre a apresentação
+    \end{alertblock}
+\end{frame}
+
+% Slide 12: Slide de conclusão
+\begin{frame}{Conclusão}
+    \begin{itemize}
+        \item \textbf{Resumo:} Esta é a conclusão da apresentação.
+        \item Concluído agora.
+    \end{itemize}
+\end{frame}
 
 \begin{frame}[plain]
  sem cabeçalho
@@ -32,5 +146,31 @@ subsectionpage=progressbar]{pescPres}
 \begin{frame}[standout]
 	Invertido!
 \end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Slide longo}
+    \begin{itemize}
+        \item Primeiro ponto
+        \item Segundo ponto
+        \item Terceiro ponto
+        \item 1 ponto
+        \item 2 ponto
+        \item 3 ponto
+        \item 4 ponto
+        \item 5 ponto
+        \item 6 ponto
+        \item 7 ponto
+        \item 8 ponto
+        \item 9 ponto
+        \item 10 ponto
+        \item 11 ponto
+        \item 12 ponto
+        \item 13 ponto
+
+    \end{itemize}
+\end{frame}
+
+
+
 
 \end{document}
